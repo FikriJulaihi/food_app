@@ -51,7 +51,7 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
       slider.add(NetworkImage(u["image"]));
     }
 
-    return (slider);
+    print(slider);
   }
 
   int _current = 0;
@@ -96,7 +96,7 @@ class _HomeState extends State<Home> with AutomaticKeepAliveClientMixin<Home> {
                       height: 200.0,
                       width: 350.0,
                       child: Carousel(
-                        images: slider,
+                        images: snapshot.data,
                         dotSize: 4.0,
                         dotSpacing: 15.0,
                         dotColor: Colors.red[400],
